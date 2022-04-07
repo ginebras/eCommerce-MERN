@@ -1,0 +1,66 @@
+.container{
+	background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      center;
+
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+}
+
+.login-wrapper{
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	width: 350px;
+	height: 300px;
+	flex-direction: column;
+	padding:20px;
+}
+
+.login-title{
+	margin-bottom: 20px;
+}
+
+.inputs-wrapper-login{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.inputs-wrapper-login input{
+	padding: 10px;
+	border: 1px solid grey;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+.button-create-login{
+	padding: 10px;
+	border: none;
+	background-color: teal;
+	cursor: pointer;
+	color: white;
+	width: 30%;
+}
+
+.actions-redirect{
+	margin-top: 10px;
+}
+
+.actions-redirect *{
+	font-size: 12px;
+	margin-top: 15px;
+	text-decoration:underline;
+}
+
+.alert{
+	background-color: #e66774;
+	padding: 10px 20px;
+	border-radius: 10px;
+}

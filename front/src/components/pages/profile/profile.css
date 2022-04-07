@@ -1,0 +1,33 @@
+.profile-container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;	
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+strong{
+	text-decoration: underline;
+}
+
+.user-info{
+	padding-bottom: 20px;
+}
+
+.user-info h3{
+	padding-bottom: 10px;
+}
+
+.edit-info-button{
+	padding: 10px 10px;
+	color: white;
+	background-color: #1a8a7f;
+	border: none;
+	transition: 0.3s all;
+}
+
+.edit-info-button:hover{
+	transform: scale(1.1);
+}

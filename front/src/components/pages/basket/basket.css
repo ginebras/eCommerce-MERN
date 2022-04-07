@@ -1,0 +1,163 @@
+.basket-wrapper{
+	padding: 40px;
+}
+
+.basket-title{
+	text-align: center;
+}
+
+.basket-actions{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.button-shopping{
+	padding: 10px;
+	color: black;
+	background-color: white;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.button-shopping:hover{
+	background-color: whitesmoke;
+}
+
+.links-actions a{
+	color: black;
+	padding-right:15px ;
+}
+
+.checkout-button{
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.checkout-button:hover{
+	background-color: grey;
+}
+
+.bottom{
+	display: flex;
+	width: 100%;
+	padding: 10px;
+}
+
+.info{
+	flex: 7;
+}
+
+.basket-details{
+	display: flex;
+}
+
+.img-info{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.product-info{
+	flex: 2;
+	padding: 20px;
+}
+
+.product-text{
+	margin-bottom: 20px;
+}
+
+.color-icon{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
+
+.product-action{
+	flex: 1;
+	padding: 20px;
+}
+
+.actions-wrapper{
+	display: flex;
+}
+
+.actions-wrapper p{
+	padding-right: 10px;
+	font-weight: bolder;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.price-container{
+	font-size: 30px;
+}
+
+.summary{
+	flex: 2;
+	border: 1px solid grey;
+	border-radius:10px ;
+	height: 300px;
+}
+
+.summary-title{
+	font-size: 30px;
+	padding: 10px;
+}
+
+.summary-item{
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.summary-total-name{
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.summary-total-price{
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.checkout-total{
+	padding: 10px;
+	color: white;
+	background-color: black;
+	cursor: pointer;
+	margin: 10px;
+	width: 300px;
+}
+
+.wishlist-p{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.modal-product-container{
+	display: flex;
+	padding: 20px 10px;
+	position: relative;
+}
+
+.img-info-modal{
+	width: 140px;
+	height: 140px;
+}
+
+.h4-modal{
+	padding-left: 10px;
+}
+
+.modal-icon{
+	position: absolute;
+	right: 0px;
+	top: 20px;
+	cursor: pointer;
+}

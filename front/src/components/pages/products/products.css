@@ -1,0 +1,29 @@
+.products-container{
+	padding: 20px;
+}
+
+.products-container h1{
+	margin-bottom: 30px;
+}
+
+.filter-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.selects-container{
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.selects-container h2{
+	margin-right: 10px;
+}
+
+.selects-container select{
+	padding: 10px;
+	border: 1px solid grey;
+	margin-right: 10px;
+}

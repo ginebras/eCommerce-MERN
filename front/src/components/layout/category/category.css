@@ -1,0 +1,30 @@
+.category-container{
+	flex: 1;
+	height: 70vh;
+	margin: 3px;
+	position: relative;
+}
+
+.img-category{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.category-info{
+	position: absolute;
+	top: 50%;
+	left: 100px;
+}
+
+.title-category{
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.button-info{
+	text-decoration: none;
+	color: black;
+}
