@@ -5,7 +5,7 @@ const controller={
 		req.body.price=parseInt(req.body.price);
 
 		if(req.file){
-			const baseName=`${req.protocol}://${req.get('host')}/public/uploads`;
+			const baseName=`${req.protocol}://${req.get('host')}/public/uploads/`;
 			const filename=req.file.filename;
 			req.body.img=`${baseName}${filename}`;
 		}else{

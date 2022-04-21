@@ -16,7 +16,7 @@ export default function Product(){
 	const [ product,setProduct ]=useState({});
 	const id=useParams().id;
 	const [ quantity,setQuantity ]=useState(0);
-	const [ color,setColor ]=useState('');
+	const [ color,setColor ]=useState('brown');
 	const [ size,setSize ]=useState('');
 	const dispatch=useDispatch();
 
@@ -74,15 +74,18 @@ export default function Product(){
 					<div className="filters-container">
 						<div className="filter-wrapper">
 							<p>Color</p>
-							{ product.color?.map((color,index)=>(
-								<div className='filter-color' style={{backgroundColor:color==='white'? 'grey' : color}}  key={index} onClick={(e)=>setColor(color)}></div>
-							)) }
+							<select onChange={(e)=>setColor(e.target.value)} >
+								<option defaultValue={true} disabled>Color</option>
+								{ product.color?.map((currentColor,index)=>(
+									<option value={currentColor} key={index} >{currentColor}</option>
+								)) }
+							</select>
 						</div>
 
 						<div className="filter-wrapper">
 							<p>Size</p>
 							<select onChange={(e)=>setSize(e.target.value)}>
-								<option defaultValue={true} disabled selected >Size</option> 
+								<option defaultValue={true} disabled >Size</option> 
 					            { product.sizes?.map((size,index)=>(
 					            	<option value={size} key={index}>{size}</option>
 					            )) }
@@ -92,17 +95,17 @@ export default function Product(){
 
 					<div className="add-container">
 						<div className="add-wrapper">
-							<div className="icon-add-container" onClick={(e)=>handleQuantity('decr')}>
-								<p>-</p>
-							</div>
+							<p className="icon-add-container" onClick={(e)=>handleQuantity('decr')}>
+								-
+							</p>
 
 							<div className="amount-container">
-								<p>{quantity}</p>
+								{quantity}
 							</div>
 
-							<div className="icon-add-container" onClick={(e)=>handleQuantity('inc')}>
-								<p>+</p>
-							</div>
+							<p className="icon-add-container" onClick={(e)=>handleQuantity('inc')}>
+								+
+							</p>
 						</div>
 
 						<div className="add-wrapper-cart">

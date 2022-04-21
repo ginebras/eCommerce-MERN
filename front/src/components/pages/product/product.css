@@ -56,7 +56,8 @@
 }
 
 .filter-wrapper p{
-	margin-right: 5px;
+	padding-right: 5px;
+	margin-bottom: 0;
 }
 
 .filter-wrapper select{
@@ -68,31 +69,6 @@
 .filter-wrapper select:hover{
 	background-color: whitesmoke;
 	cursor: pointer;
-}
-
-.filter-color{
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	margin-right: 10px;
-	cursor: pointer;
-	transition: all 0.3s;
-}
-
-.filter-color:hover{
-	transform: scale(1.2);
-}
-
-.red{
-	background-color: red;
-}
-
-.black{
-	background-color: black;
-}
-
-.green{
-	background-color: green;
 }
 
 .add-container{
@@ -114,9 +90,8 @@
 	cursor: pointer;
 	font-weight: bolder;
 	font-size: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	text-align: center;
+	flex: 1;
 }
 
 .amount-container{
@@ -125,11 +100,9 @@
 	width: 30px;
 	border-radius: 10px;
 	height: 30px;
-	padding-right: 10px;
-	padding-left:10px ;
-	display: flex;
-	align-items: center;
 	cursor: default;
+	flex: 1;
+	text-align: center;
 }
 
 .add-wrapper-cart{

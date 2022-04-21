@@ -37,7 +37,7 @@ export default function Product({product}){
 	return(
 		<div className="product-container">
 			
-			<img src={product.img} alt="product" className="product-img" />
+			<img src={product.img} alt="product" className="product-img"/>
 
 			<div className="product-actions">
 				<div className="icon-container">
